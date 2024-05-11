@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/gobridge-kr/todo-app/server/model"
+	"github.com/apitoolkit/todo-backend-chi/server/model"
 )
 
 var (

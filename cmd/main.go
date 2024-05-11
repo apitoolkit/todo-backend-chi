@@ -3,9 +3,9 @@ package main
 import (
 	"os"
 
-	"github.com/gobridge-kr/todo-app/server"
-	"github.com/gobridge-kr/todo-app/server/controller"
-	"github.com/gobridge-kr/todo-app/server/database"
+	"github.com/apitoolkit/todo-backend-chi/server"
+	"github.com/apitoolkit/todo-backend-chi/server/controller"
+	"github.com/apitoolkit/todo-backend-chi/server/database"
 )
 
 var (

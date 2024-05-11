@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/gobridge-kr/todo-app/server/database"
+	"github.com/apitoolkit/todo-backend-chi/server/database"
 )
 
 // TodoController is a MVC controller to handle todo requests

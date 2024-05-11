@@ -4,14 +4,11 @@ import (
 	"net/http"
 	"os"
 
+	"context"
+	apitoolkit "github.com/apitoolkit/apitoolkit-go"
+	"github.com/apitoolkit/todo-backend-chi/server/controller"
 	chi "github.com/go-chi/chi/v5"
 	"github.com/go-chi/cors"
-
-	// "github.com/go-chi/chi/v5/middleware"
-	"context"
-
-	apitoolkit "github.com/apitoolkit/apitoolkit-go"
-	"github.com/gobridge-kr/todo-app/server/controller"
 )
 
 // Server represents current server status
