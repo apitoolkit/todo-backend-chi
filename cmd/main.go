@@ -1,13 +1,11 @@
 package main
 
 import (
-	"net/http"
 	"os"
 
 	"github.com/gobridge-kr/todo-app/server"
 	"github.com/gobridge-kr/todo-app/server/controller"
 	"github.com/gobridge-kr/todo-app/server/database"
-	"github.com/gobridge-kr/todo-app/server/middleware"
 )
 
 var (
@@ -32,9 +30,7 @@ func main() {
 	c := controller.Todo(db)
 	s := server.New(baseURL)
 
-	s.Middleware(func(w http.ResponseWriter, r *http.Request) { middleware.Cors(w) })
 
-	s.Route("/", c)
-
+	s.SetupRoutes( c)
 	s.Serve(port)
 }
